@@ -1,0 +1,493 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    overflow: hidden;
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(26,26,23);
+} 
+ nav{
+    height: 12vh;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    
+    
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ nav ul li{
+    padding: 2vmax 3vmax;
+    color: #fff;
+    font-size: 1vmax;
+    font-weight: 500;
+    align-items: center;
+}
+#page1 .container{
+    height: 100vh;
+    width: 100%;
+    padding-top: 5vmax;
+    display: flex;
+    overflow: hidden;
+}
+
+#page1 .left{
+    height: 100vh;
+    width: 40%;
+    padding-top: 7vmax;
+    padding-left: 10vmax;
+    position: relative;
+}
+#page1 .left .contain{
+    color: #fff;
+    
+}
+ #page1 .left .contain h1{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+ #page1 .left .contain p{
+    font-size: 45px;
+    font-weight: 300;
+    margin-top: 2vmax;
+    
+}
+#page1 .left .contain h2{
+    padding-top: 2vmax;
+    display: inline-block;
+   
+}
+
+#page1 .left .contain h2 a{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+#page1 .left .contain h2 a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -3px;
+    transition: 0.6s ;
+
+}
+
+#page1 .left .contain h2 a:hover::after{
+    width: 100%;
+}
+
+#page1 .right{
+    height: 100vh;
+    width: 60%;
+    
+}
+.right img{
+   height: 170vh;
+   margin-left: -20vmax;
+   margin-top: -14vmax;
+   
+}
+
+
+#page2{
+    padding-top: 4vmax;
+    height: 100vh;
+    width: 100%;
+    background-color:  rgb(26,26,23);
+    /* position: absolute; */
+   
+}
+#page2 .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+
+}
+#page2 .left{
+    height: 100vh;
+    width: 50%;
+    padding-top: 7.9vmax;
+}
+#page2  img{
+    height: 60vh;
+}
+
+#page2 .right{
+    color: #fff;
+    padding: 14vmax 10vmax;
+}
+
+#page2 h1{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+ #page2 p{
+    font-size: 45px;
+    font-weight: 300;
+    margin-top: 2vmax;
+    
+}
+#page2 h2{
+    padding-top: 2vmax;
+    display: inline-block;
+}
+
+#page2 h2 a{
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+
+#page2 h2 a::after{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+#page2 h2 a:hover:after{
+    width: 100%;
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f1ec;
+}
+
+#page3 .up{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page3 .up h1{
+    font-size: 1vmax;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    padding-top: 3.5vmax ;
+}
+
+#page3 .up p{
+    font-size: 2.6vmax;
+    padding-top: 1vmax ;
+
+}
+
+#page3 .up button{
+    padding: 5px 33px;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin-top: 2vmax;
+
+}
+#page3 .down{
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5vmax;
+    overflow: hidden;
+    
+}
+#page3 .down .images{
+    height: 65vh;
+    width: 45%;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    transition: 0.5s ease-in-out;
+
+}
+#page3 .down .images::-webkit-scrollbar{
+    display: none;
+    transition: 0.5s ease-in-out;
+
+}
+
+#page3 .down .images img{
+    width: 35%;
+    height: 125%;
+    object-fit: cover;
+    margin-left: -0.7vmax;
+    transition: 0.5s ease-in-out;
+
+}
+#page3 .down button{
+    margin-top: 7vmax;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-width: 0ch;
+    font-size: 3vmax;
+    font-weight: normal;
+
+}
+#page4{
+    height: 100vh;
+    width: 100%;
+    background-color: #f4f1ec;
+}
+#page4 .up{
+    height: 35vh;
+    width: 100%;
+    padding: 5vmax 0 0 10vmax ;
+}
+#page4 .up h1{
+    font-size: 1vmax; 
+    letter-spacing: 3px ;
+    word-spacing: 3px;
+
+}
+#page4 .up p{
+    font-size: 2.3vmax;
+    margin-top: 1.3vmax;
+    word-spacing: 3px;
+}
+
+#page4 .up hr{
+    width: 90%;
+    margin-top: 6vmax;
+
+}
+
+#page4 .down{
+    height: 65vh;
+    width: 100%;
+    display: flex;
+   margin: 5vmax 10vmax;
+}
+
+#page4 .down .left{
+    height: 100vh;
+    width: 40%;
+}
+#page4 .down .left h1{
+    font-size: 1vmax; 
+    letter-spacing: 3px ;
+    word-spacing: 3px;
+}
+#page4 .down .left p{
+    font-size: 2.3vmax;
+    margin-top: 2vmax;
+    word-spacing: 3px;
+}
+#page4 .down .left input{
+    border-width: 0ch;
+    border-bottom:1px solid black;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin-top: 2.5vmax;
+    padding: 8px 40px;
+    background-color: #f4f1ec;
+    
+}
+#page4 .down .left button{
+    padding: 10px 55px;
+    margin-left: 1vmax;
+}
+
+
+#page4 .down .left h2{
+    font-size: 1vmax; 
+    letter-spacing: 3px ;
+    word-spacing: 3px;
+    margin-top: 3.5vmax;
+}
+
+#page4 .down .right{
+    height: 100vh;
+    width: 50%;
+}
+
+#page4 .down .right .home{
+    height: 50vh;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -3vmax;
+}
+
+#page4 .down .right .home li{
+   padding-top: -2vmax;
+   display: inline-block;
+   color: #000;
+}
+#page4 .down .right .home li a{
+    color: #000;
+    font-size: 1.7vmax;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    position: relative;
+    text-decoration: none;
+}
+
+#page4 .down .right .home li a::after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+#page4 .down .right .home li a:hover::after{
+    width: 100%;
+}
+
+#page4 .down .right .buy {
+    display: flex;
+    list-style: none;
+    margin-left: -4vmax;
+    margin-top: 1.8vmax;
+
+}
+#page4 .down .right .buy li{
+    margin-left: 4vmax;
+}
+
+#page1 .overly{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: 1.5s ease-in;
+}
+
+#page1 .overly .left{
+    height: 100vh;
+    width: 50%;
+    object-fit: cover;
+    padding: 0;
+    margin: 0; 
+    background-color: transparent;
+    transform: translateX(100%);
+    transition: 1.5s ease-in;
+}
+
+#page1 .overly .left img{
+    width: 100%;
+}
+
+#page1 .overly .right{
+    height: 100vh;
+    width: 50%;
+    background-color:#f4f1ec;
+    padding: 15vmax 5vmax;
+    
+}
+
+#page1 .overly .right .home{
+    height: 50vh;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: -2vmax;
+}
+
+#page1 .overly .right .home li{
+  padding-top: -2px;
+  display: inline-block;
+  color: #000;
+
+}
+
+#page1 .overly .right .home li a{
+    color: #000;
+    font-size: 1.7vmax;
+    font-weight: 400;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    position: relative;
+    text-decoration: none; 
+}
+
+#page1 .overly .right .home li a::after{
+    content: "";
+    position: absolute;
+    background-color: #000;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;
+}
+
+#page1 .overly .right .home li a:hover::after{
+    width: 100%;
+}
+
+#page1 .overly .right .buy{
+    display: flex;
+    list-style: none;
+    margin-left: -4vmax;
+    margin-top: 1.5vmax;
+
+}
+
+#page1 .overly .right .buy li{
+    margin-left: 4vmax;
+}
+
+.cross{
+    padding: 10px 10px;
+    font-size: 2vmax;
+    position: absolute;
+    right: 3vmax;
+    top: 2vmax;
+   
+
+}
+
+#menu{
+    cursor: pointer;
+}
